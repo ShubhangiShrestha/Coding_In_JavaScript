@@ -10,7 +10,7 @@ const addTheValues = (currentValueAtIndex,totalAddedValue) =>{
 }
 
 
-const initialArray=[10,12,20.25,35.6,98.2];
+const initialArray=[10,12,20.25,35.6,98.2,40];
 const total=reduce(initialArray,addTheValues);
 console.log(total);
 
