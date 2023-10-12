@@ -1,5 +1,5 @@
 const reduce = (initialArray,addTheValues) => {
-    let totalAddedValue=0;//sum=0,sum+=
+    let totalAddedValue=0;
     for(let i=0;i<initialArray.length;i++){
         totalAddedValue=addTheValues(initialArray[i],totalAddedValue);
     }
