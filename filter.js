@@ -1,5 +1,6 @@
+const minimumAgeOfAdult=18;
 const isAdult=(personAge)=>{
-    if(personAge>=18)
+    if(personAge>= minimumAgeOfAdult)
         return true; 
 }
 const filter=(nameWithAge,isAdult)=>{
@@ -20,4 +21,12 @@ const nameWithAge = [   {name:'Riya', age:'15'},
                     ];
 const newList=filter(nameWithAge,isAdult);
 console.log(newList);
+
+
+//Syntax in Js:- array.filter(function(currentValue, index, arr), thisValue)
+
+/* thisValue = nameWithAge, function = isAdult
+   Inside function index and array are optional
+   So, currentValue=personAge.
+*/
                     
